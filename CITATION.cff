@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use MOOD, please cite the paper below."
+title: "MOOD: Benchmarking Post-Hoc OOD Detection for Materials Property Prediction"
+type: software
+authors:
+  - family-names: Yu
+    given-names: "Shirley X."
+  - family-names: Pasarkar
+    given-names: "Amey P."
+  - family-names: Dieng
+    given-names: "Adji Bousso"
+license: MIT
+repository-code: "https://github.com/vertaix/mood-benchmark"
+date-released: 2026-11-06
+preferred-citation:
+  type: conference-paper
+  title: "MOOD: Benchmarking Post-Hoc OOD Detection for Materials Property Prediction"
+  authors:
+    - family-names: Yu
+      given-names: "Shirley X."
+    - family-names: Pasarkar
+      given-names: "Amey P."
+    - family-names: Dieng
+      given-names: "Adji Bousso"
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track"
+  year: 2026

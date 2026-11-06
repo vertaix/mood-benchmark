@@ -1,0 +1,16 @@
+# Training stack (encoder training + embedding extraction). Ran on a Slurm GPU cluster, CUDA 12.4.
+# Not needed to reproduce tables/figures or to evaluate detectors.
+#
+# ALIGNN (and the torch-based encoders) -- primary env, Python 3.10:
+#   pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
+#   pip install dgl==2.5.0 -f https://data.dgl.ai/wheels/torch-2.6/cu124/repo.html
+#   pip install -r requirements-train.txt
+#   pip install -r requirements.txt            # detectors / probes / flows
+alignn==2025.4.1
+jarvis-tools==2026.3.10
+numba==0.65.1
+tqdm==4.67.3
+#
+# SchNet / DimeNet++ (kgcnn, Keras/TensorFlow) -- separate "kgcnn-bench" env, Python 3.10:
+#   numpy==1.26.4  scikit-learn==1.7.2   (recorded)
+#   kgcnn, tensorflow, keras             (EXACT VERSIONS NOT RECORDED -- see README note)

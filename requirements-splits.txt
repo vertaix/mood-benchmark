@@ -1,0 +1,11 @@
+# Only for (a) regenerating OOD split indices (scripts/generate_physics_splits.py),
+# (b) Figure 1 crystal renders (scripts/cr_render_fig1_structs.py; also needs POV-Ray), and
+# (c) the Magpie analysis (analysis/magpie_analysis.py).
+# matbench==0.6 declares scipy==1.7.3 and so cannot be resolved together with anything else
+# here; it is installed WITHOUT its dependency pins, AFTER this file:
+#
+#   pip install -r requirements.txt -r requirements-splits.txt
+#   pip install --no-deps matbench==0.6
+pymatgen==2025.10.7
+ase==3.28.0
+matminer==0.9.3

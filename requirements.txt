@@ -1,0 +1,20 @@
+# Exact pins from the conda env that ran the paper's post-hoc detectors, probes and flows
+# (Python 3.10). Covers: mood/, reproduce.py, scripts/run_*.py, scripts/cr_*.py, analysis/.
+#
+#   pip install -r requirements.txt
+#
+# macOS note: scipy 1.15.x wheels fail to load on some macOS versions
+# (ImportError: ... _propack ... __thread_bss). If that happens, keep everything else
+# and run:  pip install "scipy<1.15"      (1.14.1 verified to work with numpy 2.2.6)
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.5.3
+threadpoolctl==3.6.0
+pandas==2.3.3
+matplotlib==3.10.9
+pillow==12.2.0
+PyYAML==6.0.3
+faiss-cpu==1.13.2
+torch==2.6.0
+zuko==1.6.0

@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.npy
+*.pt
+# data and generated artefacts (the split rules in data/ood_splits.py are code and ARE tracked)
+data/*
+!data/__init__.py
+!data/ood_splits.py
+!data/matbench_loader.py
+results/
+outputs/
+embeddings/
+checkpoints/
+logs/
+external/
+handoff/
+configs/paths.local.yaml

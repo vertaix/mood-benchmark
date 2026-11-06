@@ -1,0 +1,11 @@
+# Filesystem layout for MOOD. All paths are relative to the repository root
+# unless absolute. Edit here (or point MOOD_PATHS at another yaml file) -- no
+# script contains a hardcoded path.
+embeddings:        data/embeddings        # <dataset>/<arch>/<split>/fold_0/seed_<s>/{id_test,ood_test,train}.npy
+results:           data/results           # aggregated per-setting CSVs (e.g. all_detectors_seeded.csv)
+splits:            data/splits            # OOD split indices
+outputs:           outputs                # generated tables / figures
+flow_models:       data/flow_models
+linear_probes:     data/linear_probes
+linear_probes_mlp: data/linear_probes_mlp
+aderh:             external/ADERH         # optional: ADERH detector checkout
